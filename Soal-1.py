@@ -1,4 +1,5 @@
 # Program Penyimpan Kontak
+from ssl import AlertDescription
 import function
 
 # List of dictionary
@@ -12,6 +13,7 @@ daftar_kontak.append({
 
 # --- Menu ---
 while True:
+    print("Selamat datang!")
     print("--- Menu ---")
     print("1. Daftar Kontak")
     print("2. Tambah Kontak")
@@ -26,6 +28,7 @@ while True:
     elif menu == "2":
         kontak = function.new_kontak()
         daftar_kontak.append(kontak)
+        print("Kontak berhasil ditambahkan")
     else:
         print("Menu tidak tersedia")
 
